@@ -1,0 +1,14 @@
+{
+  "name": "lumo-practice",
+  "version": "1.0.0",
+  "description": "A project of lumo for my practice about clojurescript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Asuki Kono",
+  "license": "ISC",
+  "dependencies": {
+    "lumo-cljs": "^1.7.0"
+  }
+}
