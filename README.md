@@ -12,7 +12,7 @@ npm install
 
 # Hello world
 ```
-lumo -m hello.world
+lumo -c src -m hello-world.core
 ```
 
 # Reference
