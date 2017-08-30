@@ -9,11 +9,19 @@ Install [lumo](https://github.com/anmonteiro/lumo).
 ```
 npm install
 ```
-
-# Hello world
+# Run
+## Hello world
 ```
 lumo -c src -m hello-world.core
 ```
 
-# Reference
-[lumo-npm-example](https://github.com/rberger/lumo-npm-example)
+## Express sample app
+```
+lumo -c src -m express-sample.core
+```
+
+Then access to http://localhost:3000
+
+# References
+- [lumo-npm-example](https://github.com/rberger/lumo-npm-example)
+- [express hello world example](https://expressjs.com/en/starter/hello-world.html)

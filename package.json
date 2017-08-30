@@ -9,6 +9,7 @@
   "author": "Asuki Kono",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.15.4",
     "lumo-cljs": "^1.7.0"
   }
 }
