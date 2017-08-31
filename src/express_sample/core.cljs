@@ -5,12 +5,12 @@
 
 (.get app "/"
       (fn [req res]
-        (.send res "Hello world!")))
+        (.send res "Hello world! <a href=\"/sample\">sample</a>")))
 
 (.get app "/sample"
       (fn [req res]
-        (.send res "sample page")))
+        (.send res "sample page <a href=\"/\">home</a>")))
 
 (.listen app 3000
          (fn []
-           (prn "started-express")))
+           (js/console.log "started-express")))
