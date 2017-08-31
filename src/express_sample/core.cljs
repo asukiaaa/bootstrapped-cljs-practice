@@ -5,7 +5,7 @@
 
 (.get app "/"
       (fn [req res]
-        (.send res "Hello world! <a href=\"/sample\">sample</a>")))
+        (.send res "Hello world. <a href=\"/sample\">sample</a>")))
 
 (.get app "/sample"
       (fn [req res]
