@@ -1,5 +1,5 @@
 {
-  "name": "lumo-practice",
+  "name": "bootstrapped-cljs-practice",
   "version": "1.0.0",
   "description": "A project of lumo for my practice about clojurescript.",
   "main": "index.js",

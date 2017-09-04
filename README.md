@@ -1,5 +1,5 @@
-# lumo-practice
-A project of lumo for my practice about clojurescript.
+# bootstrapped-cljs-practice
+A project for my practice about bootstrapped clojurescript.
 
 # Setup
 ## lumo

@@ -1,4 +1,4 @@
-(defproject lumo-practice "0.1.0-SNAPSHOT"
+(defproject bootstrapped-cljs-practice "0.1.0-SNAPSHOT"
   :description "A project for my practice how to use bootstrapped cljs."
   :license {:name "MIT license"
             :url "https://opensource.org/licenses/MIT"}
