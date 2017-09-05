@@ -1,15 +1,22 @@
-(ns express-sample.core)
+(ns express-sample.core
+  (:require [hiccups.runtime :as hiccupstr]))
 
 (def express (js/require "express"))
 (def app (express))
 
 (.get app "/"
       (fn [req res]
-        (.send res "Hello world. <a href=\"/sample\">sample</a>")))
+        (.send res (hiccupstr/render-html
+                    [:div
+                     [:p "Hello world."]
+                     [:a {:href "/sample"} "sample"]]))))
 
 (.get app "/sample"
       (fn [req res]
-        (.send res "sample page <a href=\"/\">home</a>")))
+        (.send res (hiccupstr/render-html
+                    [:div
+                     [:p "sample page"]
+                     [:a {:href "/"} "home"]]))))
 
 (.listen app 3000
          (fn []

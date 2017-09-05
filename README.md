@@ -3,42 +3,69 @@ A project for my practice about bootstrapped clojurescript.
 
 # Setup
 ## lumo
-Install [lumo](https://github.com/anmonteiro/lumo).
+```
+sudo npm i -g lumo-cljs
+```
 
-## dependencies
+or
+
+```
+sudo npm i -g lumo-cljs --unsafe-parm
+```
+
+[lumo](https://github.com/anmonteiro/lumo).
+
+## calvin
+```
+sudo npm i -g calvin-cljs
+```
+
+[calvin](https://github.com/eginez/calvin).
+
+## Download node dependencies
 ```
 npm install
 ```
+
+## Download cljs dependencies
+Dependencies were written on [project.clj](/project.clj).
+
+```
+calvin repl
+```
+
 # Run
 ## Hello world
 ```
-lumo -c src -m hello-world.core
+calvin repl -c src -m hello-world.core
 ```
 
 ## Express sample app
 ```
-lumo -c src -m express-sample.core
+calvin repl -c src -m express-sample.core
 ```
 
 Then access to http://localhost:3000
 
 # Build
+Build configuration was written on [project.clj](/project.clj).
+
 ## Hello world
 ```
-lumo -c src build_hello_world.cljs
+calvin build dev-hello-world
 ```
 Then
 ```
-node index_hello_world.js
+node out/main-hello-world.js
 ```
 
 ## Express sample app
 ```
-lumo -c src build_express_sample.cljs
+calvin build dev-express-sample
 ```
 Then
 ```
-node index_express_sample.cljs
+node out/main-express-sample.js
 ```
 
 # References
