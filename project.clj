@@ -7,15 +7,15 @@
                  #_[andare "0.7.0"]
                  #_[org.clojure/clojurescript "1.9.854"]]
   :cljsbuild {:builds
-              [{:id "dev-hello-world"
-                :source-paths ["src"]
-                :compiler {:output-to "out/main-hello-world.js"
-                           :main hello-world.core
-                           :optimizations :advanced
-                           :target :nodejs}}
-               {:id "dev-express-sample"
+              [{:id "dev"
                 :source-paths ["src"]
                 :compiler {:output-to "out/main-express-sample.js"
                            :main express-sample.core
                            :optimizations :simple
+                           :target :nodejs}}
+               {:id "dev-hello-world"
+                :source-paths ["src"]
+                :compiler {:output-to "out/main-hello-world.js"
+                           :main hello-world.core
+                           :optimizations :advanced
                            :target :nodejs}}]})

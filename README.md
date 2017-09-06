@@ -61,7 +61,7 @@ node out/main-hello-world.js
 
 ## Express sample app
 ```
-calvin build dev-express-sample
+calvin build dev
 ```
 Then
 ```
