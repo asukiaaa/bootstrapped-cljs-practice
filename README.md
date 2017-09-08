@@ -2,6 +2,8 @@
 A project for my practice about bootstrapped clojurescript.
 
 # Setup
+Install nodejs to your pc.
+
 ## lumo
 ```
 sudo npm i -g lumo-cljs
