@@ -2,13 +2,20 @@
   "name": "bootstrapped-cljs-practice",
   "version": "1.0.0",
   "description": "A project of lumo for my practice about clojurescript.",
-  "main": "index.js",
+  "main": "out/main-express-sample.js",
+  "engines": {
+    "node": "8.4.0",
+    "npm": "5.3.0"
+  },
   "scripts": {
+    "postinstall": "calvin build dev",
+    "start": "node out/main-express-sample.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Asuki Kono",
   "license": "ISC",
   "dependencies": {
+    "calvin-cljs": "^0.3.0",
     "express": "^4.15.4",
     "lumo-cljs": "^1.7.0"
   }

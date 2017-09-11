@@ -1,0 +1,1 @@
+web: calvin build dev; node out/main-express-sample.js

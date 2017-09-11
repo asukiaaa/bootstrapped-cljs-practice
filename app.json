@@ -1,0 +1,10 @@
+{
+  "name": "Heroku cljs practice",
+  "description": "A bootstrapped cljs project for my practice using Express and hiccup",
+  "repository": "https://github.com/asukiaaa/bootstrapped-cljs-practice",
+  "keywords": ["node", "express", "heroku", "cljs", "hiccup"],
+  "image": "heroku/nodejs",
+  "buildpacks": [
+    "url": "heroku/nodejs"
+    ]
+}
